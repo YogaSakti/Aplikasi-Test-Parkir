@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">test parkir</string>
+    <string-array name="jenis">
+        <item>Motor</item>
+        <item>Mobil</item>
+    </string-array>
+</resources>

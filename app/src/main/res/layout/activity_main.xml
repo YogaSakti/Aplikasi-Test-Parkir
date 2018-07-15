@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CekLogin"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/kendaraan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getkendaraan"
+        android:text="Get Kendaraan" />
+
+    <EditText
+        android:id="@+id/noken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="No kendaraan" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Nama" />
+
+    <Spinner
+        android:id="@+id/jenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/jenis"/>
+
+    <Button
+        android:id="@+id/postken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Postkendaraan"
+        android:text="Insert Kendaraan" />
+
+    <Button
+        android:id="@+id/getStat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getStatus"
+        android:text="Get Status" />
+    <Button
+        android:id="@+id/getStatSpek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getStatusCari"
+        android:text="Get Status (NOKEN)" />
+
+    <Button
+        android:id="@+id/putStat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="PutStatus"
+        android:text="Put Status" />
+
+    <Button
+        android:id="@+id/delken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="DeleteKendaraan"
+        android:text="Delete Kendaraan" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
